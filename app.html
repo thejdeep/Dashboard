@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Dashboard</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+    <!-- Page Specific CSS -->
+    <link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css">
+    <link rel="stylesheet" type="text/css" href="css/typeahead.js-bootstrap.css">
+    <style type="text/css">
+
+    .typeahead,
+.tt-query,
+.tt-hint {
+  width: 600px;
+  height: 30px;
+  /*padding: 8px 8px;*/
+  font-size: 20px;
+  line-height: 30px;
+  border: 2px solid #ccc;
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+          border-radius: 8px;
+  outline: none;
+}
+
+.typeahead {
+  background-color: #fff;
+}
+
+.typeahead:focus {
+  border: 2px solid #0052a4;
+}
+
+.tt-query {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.tt-hint {
+  color: #999
+}
+
+.tt-dropdown-menu {
+  width: 600px;
+  margin-top: 12px;
+  padding: 8px 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+          border-radius: 8px;
+  -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+     -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+          box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.tt-suggestion {
+  padding: 3px 20px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.tt-suggestion.tt-is-under-cursor {
+  color: #fff;
+  background-color: #0052a4;
+
+}
+
+.tt-suggestion p {
+  
+}
+
+.gist {
+  font-size: 14px;
+}
+
+
+}</style>
+<script>
+$(document).ready(function(){
+  $(":file").css("background-color","blue");
+});
+</script>
+  </head>
+
+  <body>
+
+    <div id="wrapper">
+
+      <!-- Sidebar -->
+      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><i class="fa fa-home" style="margin-right:15px;color:white;"></i>AppLover</a>
+          <i class="fa fa-search" style="margin-left:100px;margin-top:15px;"></i>
+          <input type="text" class="apps" placeholder="Search" style="width:600px;">
+        </div>
+
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav side-nav">
+            <li ><a href="index.html"><i class="fa fa-users"></i> Feed</a></li>
+            <li ><a href="allapps.html"><i class="fa fa-tags"></i> All Apps</a></li>
+            <li ><a href="myapps.html"><i class="fa fa-tag"></i> My Apps</a></li>
+            <li class="active"><a href="app.html"><i class="fa fa-tag" ></i> Submit App</a></li>
+            <li><a href="#"><i class="fa fa-download"></i> Download Applover</a></li>
+            
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right navbar-user">
+            <li class="dropdown messages-dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell-o"></i> Notifications <span class="badge">7</span> <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                
+                <li class="message-preview">
+                  <a href="#">
+                    <span class="avatar"><img src="chidambar.jpg" width="50px" height="50px" class="img-circle"></span>
+                    <span class="name">Chidambar</span>
+                    <span class="message">Hey there !</span>
+                    <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li class="message-preview">
+                  <a href="#">
+                    <span class="avatar"><img src="vineet.jpeg" width="50px" height="50px" class="img-circle"></span>
+                    <span class="name">Vineet</span>
+                    <span class="message">Hey there !</span>
+                    <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li class="message-preview">
+                  <a href="#">
+                    <span class="avatar"><img src="thej.jpeg" width="50px" height="50px" class="img-circle"></span>
+                    <span class="name">Thej</span>
+                    <span class="message">Hey there !</span>
+                    <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li><a href="#">View All  <span class="badge">7</span></a></li>
+              </ul>
+            </li>
+            
+            <li class="dropdown user-dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Thejdeep <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
+                
+                <li><a href="#"><i class="fa fa-gear"></i> Settings</a></li>
+                <li class="divider"></li>
+                <li><a href="#"><i class="fa fa-power-off"></i> Log Out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </nav>
+
+      <div id="page-wrapper">
+
+        <div class="row">
+         
+
+        <div class="row">
+          
+          <div class="col-lg-8" style="margin-left:20px;">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title"><i class="fa fa-tag"></i> Submit App</h3>
+              </div>
+            
+              <div class="col-lg-4">
+                <img src="images/pano.png" width="100px" height="100px" class="img-circle" style="margin-left:20px;margin-top:20px;"> Description of the App <br/><br/>
+            <h4>Choose your APK file</h4><hr/><input type="file" name="myfile"><button type="button" class="btn btn-success" style="margin-top:20px;width:80px;">Upload</button><br/><br/>
+             <div class="checkbox" style="margin-left:5px;margin-top:40px;">
+  <label>
+    <input type="checkbox" value="">
+    Let Users contact me directly
+  </label>
+</div>
+<div class="checkbox" style="margin-left:5px;margin-top:10px;">
+  <label>
+    <input type="checkbox" value="">
+    Let Testing Companies contact me directly
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+    Daily Email of reviews
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+    Email for each review
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+    Do Not Email
+  </label>
+</div>
+            
+            </div>
+            <div class="col-lg-4" style="margin-top:140px;">
+                
+            <h4>Choose your Phone</h4><hr/>
+             <!-- <i class="fa fa-search" style="margin-top:5px;color:#BEBEBE;"></i> -->
+          <input type="text" class="phones" placeholder="Search" style="width:250px;">
+          <button type="button" class="btn btn-primary" style="margin-top:180px;width:80px;margin-left:100px;">Save</button>
+            </div>
+            </div>
+           
+          </div>
+          <div class="col-lg-3" >
+            
+              <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title"><i class="fa fa-clock-o"></i> Recent Activity</h3>
+              </div>
+              <div class="panel-body">
+                <div class="list-group">
+                  <a href="#" class="list-group-item">
+                    <span class="badge">just now</span>
+                    <i class="fa fa-tag"style="color:#BEBEBE;"></i> App A reviewed by Applover B
+                  </a>
+                  <a href="#" class="list-group-item">
+                    <span class="badge">4 minutes ago</span>
+                    <i class="fa fa-comment"style="color:#BEBEBE;"></i> Commented on a review
+                  </a>
+                  <a href="#" class="list-group-item">
+                    <span class="badge">23 minutes ago</span>
+                    <i class="fa fa-tag"style="color:#BEBEBE;"></i> App C has been updated
+                  </a>
+                  <a href="#" class="list-group-item">
+                    <span class="badge">46 minutes ago</span>
+                    <i class="fa fa-tag"style="color:#BEBEBE;"></i> App D has been uploaded
+                  </a>
+                  
+                  
+                  
+                 
+                  
+                </div>
+                <div class="text-right">
+                  <a href="#">View All Notifications <i class="fa fa-arrow-circle-right" style="color:#BEBEBE;"></i></a>
+                </div>
+              </div>
+            </div>
+
+              <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title"><i class="fa fa-comment"></i> Reviews</h3>
+              </div>
+              <div class="panel-body">
+                <div class="list-group">
+                  <a class="list-group-item">
+                    
+                    <img src="vineet.jpeg" width="40px" height="40px" class="img-circle"> Your App is Awesome
+                     <button type="button" class="btn btn-success btn-xs">Reply</button>
+
+                  </a>
+                  <a  class="list-group-item">
+                    <img src="chidambar.jpg" width="40px" height="40px" class="img-circle"> Your App is Awesome
+                     <button type="button" class="btn btn-success btn-xs">Reply</button>
+                  </a>
+                  <a  class="list-group-item">
+                   <img src="thej.jpeg" width="40px" height="40px" class="img-circle"> Your App is Awesome
+                     <button type="button" class="btn btn-success btn-xs">Reply</button>
+                  </a>
+                 
+                  
+                  
+                 
+                  
+                </div>
+                <div class="text-right">
+                  <a href="#">View All Notifications <i class="fa fa-arrow-circle-right"style="color:#BEBEBE;"></i></a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div><!-- /.row -->
+
+      </div><!-- /#page-wrapper -->
+
+    </div><!-- /#wrapper -->
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Page Specific Plugins -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>
+    <script src="js/morris/chart-data-morris.js"></script>
+    <script src="js/tablesorter/jquery.tablesorter.js"></script>
+    <script src="js/tablesorter/tables.js"></script>
+     <script src="typeahead.min.js"></script>
+
+    <script type="text/javascript">
+$('input.apps').typeahead([
+{
+      name: 'Apps',
+      header:'<h4 style="color:#428BCA;">Apps</h4>',
+      local: ["Text", "Pano", "Friday", "Train", "Mp3"]
+},
+{
+  name : 'AppLovers',
+  header:'<h4 style="color:#428BCA;">AppLovers</h4>',
+  local: ["Vineet","Chidambar","Thejdeep","Sriram","Suhas"]
+}]
+);
+    </script>
+     <script type="text/javascript">
+$('input.phones').typeahead(
+{
+      name: 'Phones',
+      
+      local: ["Galaxy", "iPhone", "Nexus", "Canvas", "Desire"]
+}
+
+);
+    </script>
+
+
+  </body>
+</html>
