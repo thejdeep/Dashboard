@@ -32,6 +32,8 @@
      -moz-border-radius: 8px;
           border-radius: 8px;
   outline: none;
+  margin-left:100px;
+  margin-top: 5px;
 }
 
 .typeahead {
@@ -54,6 +56,7 @@
 
 .tt-dropdown-menu {
   width: 600px;
+  margin-left: 100px;
   margin-top: 12px;
   padding: 8px 0;
   background-color: #fff;
@@ -89,6 +92,16 @@
 
 
 }</style>
+<style type="text/css">
+
+input{
+    
+background: url("images/search.png") top left no-repeat;
+background-color: white;
+    height:30px;
+    
+}
+</style>
   </head>
 
   <body>
@@ -106,8 +119,8 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="index.html"><i class="fa fa-home" style="margin-right:15px;color:white;"></i>AppLover</a>
-          <i class="fa fa-search" style="margin-left:100px;margin-top:15px;"></i>
-          <input type="text" class="apps" placeholder="Search" style="width:600px;">
+          <!-- <i class="fa fa-search" style="margin-left:100px;margin-top:15px;"></i> -->
+          <input type="text" class="apps"  style="width:600px;margin-left:100px;">
         </div>
 
 
@@ -248,32 +261,29 @@
                 <h3 class="panel-title"><i class="fa fa-tags"></i> Featured Apps</h3>
               </div>
               <div class="panel-body">
-                <div class="list-group">
-                  <a href="#" class="list-group-item" style="font-size:17px;">
-                      <img src="images/pano.png" width="40px" height="40px" class="img-circle">Pano
-                  </a>
-                  <a href="#" class="list-group-item" style="font-size:17px;">
-                      <img src="images/friday.png" width="40px" height="40px" class="img-circle">Friday
-                  </a>
-                  <a href="#" class="list-group-item" style="font-size:17px;">
-                      <img src="images/mp3.png" width="40px" height="40px" class="img-circle">MP3
-                  </a>
-                  <a href="#" class="list-group-item" style="font-size:17px;">
-                      <img src="images/text.png" width="40px" height="40px" class="img-circle">Text
-                  </a>
-                   <a href="#" class="list-group-item" style="font-size:17px;">
-                      <img src="images/trainticket.png" width="40px" height="40px" class="img-circle">Train 
-                  </a>
-                   <a href="#" class="list-group-item" style="font-size:17px;">
-                      <img src="images/text.png" width="40px" height="40px" class="img-circle">Text
-                  </a>
-                  <a href="#" class="list-group-item" style="font-size:17px;">
-                      <img src="images/text.png" width="40px" height="40px" class="img-circle">Text
-                  </a>
-                  <a href="#" class="list-group-item" style="font-size:17px;">
-                      <img src="images/text.png" width="40px" height="40px" class="img-circle">Text
-                  </a>
-                </div>
+                <div class="list-group" style="margin-left:20px;">
+                  <div style="margin-top:10px;">
+                  <a href="#"  style="font-size:17px;"> <!-- class should have been listgroup item -->
+                      <img src="images/pano.png" width="40px" height="40px" class="img-circle" style="margin-right:5px;">Pano
+                  </a><div><br/><br/>
+                  <div style="margin-top:10px;">
+                  <a href="#"  style="font-size:17px;">
+                      <img src="images/friday.png" width="40px" height="40px" class="img-circle"style="margin-right:5px;">Friday
+                  </a></div><br/><br/>
+                  <div style="margin-top:10px;">
+                  <a href="#"  style="font-size:17px;">
+                      <img src="images/mp3.png" width="40px" height="40px" class="img-circle"style="margin-right:5px;">MP3
+                  </a></div><br/><br/>
+                  <div style="margin-top:10px;">
+                  <a href="#"  style="font-size:17px;">
+                      <img src="images/text.png" width="40px" height="40px" class="img-circle"style="margin-right:5px;">Text
+                  </a></div><br/><br/>
+                  <div style="margin-top:10px;">
+                   <a href="#"  style="font-size:17px;">
+                      <img src="images/trainticket.png" width="40px" height="40px" class="img-circle"style="margin-right:5px;">Train 
+                  </a></div>
+                
+                </div><br/><br/>
 
                 <div class="text-right">
                   <a href="#">View All <i class="fa fa-arrow-circle-right"style="color:#BEBEBE;"></i></a>
