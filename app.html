@@ -54,6 +54,7 @@
   color: #999
 }
 
+
 .tt-dropdown-menu {
   width: 600px;
   margin-left: 100px; 
@@ -69,6 +70,11 @@
      -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
           box-shadow: 0 5px 10px rgba(0,0,0,.2);
 }
+.phones .tt-dropdown-menu {
+ width: 200px;
+  
+}
+
 
 .tt-suggestion {
   padding: 3px 20px;
@@ -203,9 +209,12 @@ $(document).ready(function(){
                 <h3 class="panel-title"><i class="fa fa-tag"></i> Submit App</h3>
               </div>
             
-              <div class="col-lg-5">
-                <img src="images/pano.png" width="100px" height="100px" class="img-circle" style="margin-left:20px;margin-top:20px;"> Description of the App <br/><br/>
-            <h4>Choose your APK file</h4><hr/><input type="file" name="myfile"><button type="button" class="btn btn-success" style="margin-top:20px;width:80px;">Upload</button><br/><br/>
+              <div class="col-lg-7">
+                <div class="row">
+                  <div class="col-lg-3">
+                <img src="images/pano.png" width="100px" height="100px" class="img-circle" style="margin-left:20px;margin-top:20px;"></div>
+                <div class="col-lg-3" style="margin-top:45px;"> <h4>Name</h4><p>Description</p></div></div> <br/><br/>
+            <h4>Choose your APK file</h4><br/><input type="file" name="myfile"><button type="button" class="btn btn-success" style="margin-top:20px;width:80px;">Upload</button><br/><br/>
              <div class="checkbox" style="margin-left:0px;margin-top:40px;">
   <label>
     <input type="checkbox" value="">
@@ -218,32 +227,36 @@ $(document).ready(function(){
     Let Testing Companies contact me directly
   </label>
 </div>
+<div class="row">
+  <div class="col-lg-4">
 <div class="radio">
   <label>
     <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
     Daily Email of reviews
   </label>
 
-</div>
+</div></div>
+<div class="col-lg-4">
 <div class="radio">
   <label>
     <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
     Email for each review
   </label>
-</div>
+</div></div>
+<div class="col-lg-4">
 <div class="radio">
   <label>
     <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
     Do Not Email
   </label>
-</div>
-            
+</div></div>
+          </div>  
             </div>
-            <div class="col-lg-4" style="margin-top:140px;">
+            <div class="col-lg-3" style="margin-top:140px;">
               <div style="display:inline;">  
-            <h4>Choose your Phone</h4><hr/>
+            <h4>Choose your Phone</h4><br/>
              <!-- <i class="fa fa-search" style="margin-top:5px;color:#BEBEBE;"></i> -->
-          <input type="text" class="phones" placeholder="Add Phones here" style="width:200px;"></div>
+          <input type="text" class="phones" placeholder="Add Phones here" style="width:200px;margin-left:0px;"></div>
           <button type="button" class="btn btn-primary" style="margin-top:250px;width:80px;margin-left:250px;">Save</button>
             </div>
             </div>
