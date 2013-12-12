@@ -32,6 +32,8 @@
      -moz-border-radius: 8px;
           border-radius: 8px;
   outline: none;
+  margin-left:100px;
+  margin-top: 5px;
 }
 
 .typeahead {
@@ -54,6 +56,7 @@
 
 .tt-dropdown-menu {
   width: 600px;
+  margin-left: 100px; 
   margin-top: 12px;
   padding: 8px 0;
   background-color: #fff;
@@ -89,6 +92,16 @@
 
 
 }</style>
+<style type="text/css">
+
+input.apps{
+    
+background: url("images/search.png") top left no-repeat;
+background-color: white;
+    height:30px;
+    
+}
+</style>
 <script>
 $(document).ready(function(){
   $(":file").css("background-color","blue");
@@ -105,14 +118,14 @@ $(document).ready(function(){
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            <span class="sr-only">Toggle navigation</span>
+        <!--     <span class="sr-only">Toggle navigation</span> -->
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="index.html"><i class="fa fa-home" style="margin-right:15px;color:white;"></i>AppLover</a>
-          <i class="fa fa-search" style="margin-left:100px;margin-top:15px;"></i>
-          <input type="text" class="apps" placeholder="Search" style="width:600px;">
+          
+         <input type="text" class="apps"  style="width:600px;margin-left:100px;">
         </div>
 
 
@@ -190,16 +203,16 @@ $(document).ready(function(){
                 <h3 class="panel-title"><i class="fa fa-tag"></i> Submit App</h3>
               </div>
             
-              <div class="col-lg-4">
+              <div class="col-lg-5">
                 <img src="images/pano.png" width="100px" height="100px" class="img-circle" style="margin-left:20px;margin-top:20px;"> Description of the App <br/><br/>
             <h4>Choose your APK file</h4><hr/><input type="file" name="myfile"><button type="button" class="btn btn-success" style="margin-top:20px;width:80px;">Upload</button><br/><br/>
-             <div class="checkbox" style="margin-left:5px;margin-top:40px;">
+             <div class="checkbox" style="margin-left:0px;margin-top:40px;">
   <label>
     <input type="checkbox" value="">
     Let Users contact me directly
   </label>
 </div>
-<div class="checkbox" style="margin-left:5px;margin-top:10px;">
+<div class="checkbox" style="margin-left:0px;margin-top:10px;">
   <label>
     <input type="checkbox" value="">
     Let Testing Companies contact me directly
@@ -210,6 +223,7 @@ $(document).ready(function(){
     <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
     Daily Email of reviews
   </label>
+
 </div>
 <div class="radio">
   <label>
@@ -226,11 +240,11 @@ $(document).ready(function(){
             
             </div>
             <div class="col-lg-4" style="margin-top:140px;">
-                
+              <div style="display:inline;">  
             <h4>Choose your Phone</h4><hr/>
              <!-- <i class="fa fa-search" style="margin-top:5px;color:#BEBEBE;"></i> -->
-          <input type="text" class="phones" placeholder="Search" style="width:250px;">
-          <button type="button" class="btn btn-primary" style="margin-top:180px;width:80px;margin-left:100px;">Save</button>
+          <input type="text" class="phones" placeholder="Add Phones here" style="width:200px;"></div>
+          <button type="button" class="btn btn-primary" style="margin-top:250px;width:80px;margin-left:250px;">Save</button>
             </div>
             </div>
            
