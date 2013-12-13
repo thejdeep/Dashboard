@@ -106,10 +106,7 @@ background-color: white;
 
   <body>
 
-    <div id="wrapper">
-
-      <!-- Sidebar -->
-      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -118,23 +115,26 @@ background-color: white;
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+
+          <div style="margin-left:23%;">
           <a class="navbar-brand" href="index.html"><i class="fa fa-home" style="margin-right:15px;color:white;"></i>AppLover</a>
+          <!-- <i class="fa fa-search" style="margin-left:100px;margin-top:15px;"></i> -->
           <input type="text" class="apps"  style="width:600px;margin-left:100px;">
-        </div>
+        </div></div>
 
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
-          <ul class="nav navbar-nav side-nav">
-            <li ><a href="index.html"><i class="fa fa-users"></i> Feed</a></li>
-            <li class="active"><a href="allapps.html"><i class="fa fa-tags"></i> All Apps</a></li>
-            <li ><a href="myapps.html"><i class="fa fa-tag"></i> My Apps</a></li>
+         <!--  <ul class="nav navbar-nav side-nav">
+            <li class="active"><a href="index.html"><i class="fa fa-users"></i> Feed</a></li>
+            <li><a href="allapps.html"><i class="fa fa-tags"></i> All Apps</a></li>
+            <li><a href="myapps.html"><i class="fa fa-tag"></i> My Apps</a></li>
             <li><a href="app.html"><i class="fa fa-tag" ></i> Submit App</a></li>
             <li><a href="#"><i class="fa fa-download"></i> Download Applover</a></li>
             
-          </ul>
+          </ul> -->
 
-          <ul class="nav navbar-nav navbar-right navbar-user">
+          <ul class="nav navbar-nav navbar-right navbar-user" style="z-index:100;">
             <li class="dropdown messages-dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell-o"></i> Notifications <span class="badge">7</span> <b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -180,6 +180,34 @@ background-color: white;
                 <li><a href="#"><i class="fa fa-power-off"></i> Log Out</a></li>
               </ul>
             </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </nav>
+       <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="margin-top:50px;min-height:25px;background-color:#303030  ;">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header" style="margin-left:19%;">
+
+         <a href="index.html" style="">Feed</a>
+         <a href="allapps.html" style="margin-left:20px;">All Apps</a>
+         <a href="myapps.html" style="margin-left:20px;">My Apps</a>
+         <a href="#" style="margin-left:830px;">Download AppLover</a>
+         <a href="app.html" style="margin-left:30px;">Submit App</a>
+        </div>
+
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+         <!--  <ul class="nav navbar-nav side-nav">
+            <li class="active"><a href="index.html"><i class="fa fa-users"></i> Feed</a></li>
+            <li><a href="allapps.html"><i class="fa fa-tags"></i> All Apps</a></li>
+            <li><a href="myapps.html"><i class="fa fa-tag"></i> My Apps</a></li>
+            <li><a href="app.html"><i class="fa fa-tag" ></i> Submit App</a></li>
+            <li><a href="#"><i class="fa fa-download"></i> Download Applover</a></li>
+            
+          </ul> -->
+
+          <ul class="nav navbar-nav navbar-right navbar-user">
+            
           </ul>
         </div><!-- /.navbar-collapse -->
       </nav>

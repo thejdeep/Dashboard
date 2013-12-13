@@ -322,14 +322,14 @@ textarea {
 }
 
 a {
-  color: #428bca;
+  color: #FFFFFF;
   text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: #2a6496;
-  text-decoration: underline;
+  color: #BEBEBE;
+  text-decoration: none;
 }
 
 a:focus {
@@ -4788,11 +4788,11 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-default .navbar-link {
-  color: #777777;
+  color: #ffffff;
 }
 
 .navbar-default .navbar-link:hover {
-  color: #333333;
+  color: #777777;
 }
 
 .navbar-inverse {
@@ -4801,26 +4801,26 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-inverse .navbar-brand {
-  color: #999999;
+  color: #ffffff;
 }
 
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
-  color: #ffffff;
+  color: #BEBEBE;
   background-color: transparent;
 }
 
 .navbar-inverse .navbar-text {
-  color: #999999;
+  color: #ffffff;
 }
 
 .navbar-inverse .navbar-nav > li > a {
-  color: #999999;
+  color: #ffffff;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
-  color: #ffffff;
+  color: #BEBEBE;
   background-color: transparent;
 }
 
