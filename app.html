@@ -32,7 +32,7 @@
      -moz-border-radius: 8px;
           border-radius: 8px;
   outline: none;
-  margin-left:100px;
+  margin-left:70px;
   margin-top: 5px;
 }
 
@@ -57,7 +57,7 @@
 
 .tt-dropdown-menu {
   width: 600px;
-  margin-left: 100px; 
+  margin-left: 70px; 
   margin-top: 12px;
   padding: 8px 0;
   background-color: #fff;
@@ -98,16 +98,7 @@
 
 
 }</style>
-<style type="text/css">
 
-input.apps{
-    
-background: url("images/search.png") top left no-repeat;
-background-color: white;
-    height:30px;
-    
-}
-</style>
 <script>
 $(document).ready(function(){
   $(":file").css("background-color","blue");
@@ -120,6 +111,17 @@ $(document).ready(function(){
    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
+          <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="margin-top:50px;">
+          <ul class="nav navbar-nav">
+            <li ><a href="index.html"><i class="fa fa-users"></i> Feed</a></li>
+            <li><a href="allapps.html"><i class="fa fa-tags"></i> All Apps</a></li>
+            <li><a href="myapps.html"><i class="fa fa-tag"></i> My Apps</a></li>
+            <li class="active"><a href="app.html"><i class="fa fa-tag" ></i> Submit App</a></li>
+            <li style="margin-left:1000px;"><a href="#"><i class="fa fa-download"></i> Download Applover</a></li>
+            
+          </ul>
+        </nav>
+
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
             <!-- <span class="sr-only">Toggle navigation</span> -->
             <span class="icon-bar"></span>
@@ -127,26 +129,14 @@ $(document).ready(function(){
             <span class="icon-bar"></span>
           </button>
 
-          <div style="margin-left:23%;">
+          <div>
           <a class="navbar-brand" href="index.html"><i class="fa fa-home" style="margin-right:15px;color:white;"></i>AppLover</a>
           <!-- <i class="fa fa-search" style="margin-left:100px;margin-top:15px;"></i> -->
-          <input type="text" class="apps"  style="width:600px;margin-left:100px;">
-        </div></div>
-
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-         <!--  <ul class="nav navbar-nav side-nav">
-            <li class="active"><a href="index.html"><i class="fa fa-users"></i> Feed</a></li>
-            <li><a href="allapps.html"><i class="fa fa-tags"></i> All Apps</a></li>
-            <li><a href="myapps.html"><i class="fa fa-tag"></i> My Apps</a></li>
-            <li><a href="app.html"><i class="fa fa-tag" ></i> Submit App</a></li>
-            <li><a href="#"><i class="fa fa-download"></i> Download Applover</a></li>
-            
-          </ul> -->
-
-          <ul class="nav navbar-nav navbar-right navbar-user" style="z-index:100;">
-            <li class="dropdown messages-dropdown">
+          <input type="text" class="apps" placeholder="Search" style="width:600px;margin-left:70px;margin-top:5px;">
+          <button type="button" class="btn btn-success" style="margin-top:10px;width:80px;">Search</button>
+          <button type="button" class="btn btn-primary" style="margin-top:10px;width:80px;margin-left:310px;">Submit App</button>
+           <ul class="nav navbar-nav navbar-right navbar-user">
+            <li class="dropdown messages-dropdown" style="margin-left:10px;">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell-o"></i> Notifications <span class="badge">7</span> <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 
@@ -192,34 +182,13 @@ $(document).ready(function(){
               </ul>
             </li>
           </ul>
-        </div><!-- /.navbar-collapse -->
-      </nav>
-       <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="margin-top:50px;min-height:25px;background-color:#303030  ;">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header" style="margin-left:19%;">
 
-         <a href="index.html" style="">Feed</a>
-         <a href="allapps.html" style="margin-left:20px;">All Apps</a>
-         <a href="myapps.html" style="margin-left:20px;">My Apps</a>
-         <a href="#" style="margin-left:830px;">Download AppLover</a>
-         <a href="app.html" style="margin-left:30px;">Submit App</a>
-        </div>
+        </div></div>
 
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-         <!--  <ul class="nav navbar-nav side-nav">
-            <li class="active"><a href="index.html"><i class="fa fa-users"></i> Feed</a></li>
-            <li><a href="allapps.html"><i class="fa fa-tags"></i> All Apps</a></li>
-            <li><a href="myapps.html"><i class="fa fa-tag"></i> My Apps</a></li>
-            <li><a href="app.html"><i class="fa fa-tag" ></i> Submit App</a></li>
-            <li><a href="#"><i class="fa fa-download"></i> Download Applover</a></li>
-            
-          </ul> -->
 
-          <ul class="nav navbar-nav navbar-right navbar-user">
-            
-          </ul>
+         
         </div><!-- /.navbar-collapse -->
       </nav>
 
