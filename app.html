@@ -108,31 +108,104 @@ $(document).ready(function(){
 
   <body>
 
-   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="margin-top:50px;">
-          <ul class="nav navbar-nav">
-            <li ><a href="index.html"><i class="fa fa-users"></i> Feed</a></li>
-            <li><a href="allapps.html"><i class="fa fa-tags"></i> All Apps</a></li>
-            <li><a href="myapps.html"><i class="fa fa-tag"></i> My Apps</a></li>
-            <li class="active"><a href="app.html"><i class="fa fa-tag" ></i> Submit App</a></li>
-            <li style="margin-left:1000px;"><a href="#"><i class="fa fa-download"></i> Download Applover</a></li>
-            
-          </ul>
-        </nav>
+          
 
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            <!-- <span class="sr-only">Toggle navigation</span> -->
+            <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+ <a class="navbar-brand" href="index.html"><i class="fa fa-home" style="margin-right:15px;color:white;"></i>AppLover</a>
+          </div>
 
-          <div>
-          <a class="navbar-brand" href="index.html"><i class="fa fa-home" style="margin-right:15px;color:white;"></i>AppLover</a>
+
+           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+      <li ><a href="index.html">Feed</a></li>
+      <li><a href="allapps.html">All Apps</a></li>
+      <li><a href="myapps.html">My Apps</a></li>
+      
+     <!--  <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+          <li class="divider"></li>
+          <li><a href="#">One more separated link</a></li>
+        </ul>
+      </li> -->
+    </ul>
+    <form class="navbar-form navbar-left" role="search">
+      <div class="form-group">
+        <input type="text" class="apps" placeholder="Search">
+          
+      </div>
+      <button type="button" class="btn btn-success">Search</button>
+       <a href="app.html"><button type="button" class="btn btn-primary">Submit App</button></a>
+    </form>
+    <ul class="nav navbar-nav navbar-right">
+       <li class="dropdown messages-dropdown" >
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell-o"></i> Notifications <span class="badge">7</span> <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                
+                <li class="message-preview">
+                  <a href="#">
+                    <span class="avatar"><img src="chidambar.jpg" width="50px" height="50px" class="img-circle"></span>
+                    <span class="name">Chidambar</span>
+                    <span class="message">Hey there !</span>
+                    <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li class="message-preview">
+                  <a href="#">
+                    <span class="avatar"><img src="vineet.jpeg" width="50px" height="50px" class="img-circle"></span>
+                    <span class="name">Vineet</span>
+                    <span class="message">Hey there !</span>
+                    <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li class="message-preview">
+                  <a href="#">
+                    <span class="avatar"><img src="thej.jpeg" width="50px" height="50px" class="img-circle"></span>
+                    <span class="name">Thej</span>
+                    <span class="message">Hey there !</span>
+                    <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li><a href="#">View All  <span class="badge">7</span></a></li>
+              </ul>
+            </li>
+     
+      <li class="dropdown user-dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Thejdeep <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
+                
+                <li><a href="#"><i class="fa fa-gear"></i> Settings</a></li>
+                <li class="divider"></li>
+                <li><a href="#"><i class="fa fa-power-off"></i> Log Out</a></li>
+              </ul>
+            </li>
+    </ul>
+  </div><!-- /.navbar-collapse --> 
+
+
+
+
+
+         
           <!-- <i class="fa fa-search" style="margin-left:100px;margin-top:15px;"></i> -->
-          <input type="text" class="apps" placeholder="Search" style="width:600px;margin-left:70px;margin-top:5px;">
+         <!--  <input type="text" class="apps" placeholder="Search" style="width:600px;margin-left:70px;margin-top:5px;">
           <button type="button" class="btn btn-success" style="margin-top:10px;width:80px;">Search</button>
           <a href="app.html">
           <button type="button" class="btn btn-primary" style="margin-top:10px;width:80px;margin-left:310px;">Submit App</button></a>
@@ -183,15 +256,33 @@ $(document).ready(function(){
               </ul>
             </li>
           </ul>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html"><i class="fa fa-users"></i> Feed</a></li>
+            <li ><a href="allapps.html"><i class="fa fa-tags"></i> All Apps</a></li>
+            <li><a href="myapps.html"><i class="fa fa-tag"></i> My Apps</a></li>
+            <li><a href="app.html"><i class="fa fa-tag" ></i> Submit App</a></li>
+            <li style="margin-left:1000px;"><a href="#"><i class="fa fa-download"></i> Download Applover</a></li>
+            
+          </ul>
 
         </div></div>
 
-
+ -->
         <!-- Collect the nav links, forms, and other content for toggling -->
 
          
-        </div><!-- /.navbar-collapse -->
+        <!-- /.navbar-collapse -->
       </nav>
+     <!--  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="margin-top:3%;">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html"><i class="fa fa-users"></i> Feed</a></li>
+            <li ><a href="allapps.html"><i class="fa fa-tags"></i> All Apps</a></li>
+            <li><a href="myapps.html"><i class="fa fa-tag"></i> My Apps</a></li>
+            <li><a href="app.html"><i class="fa fa-tag" ></i> Submit App</a></li>
+            <li style="margin-left:1000px;"><a href="#"><i class="fa fa-download"></i> Download Applover</a></li>
+            
+          </ul>
+        </nav> -->
 
       <div id="page-wrapper">
 
@@ -200,7 +291,7 @@ $(document).ready(function(){
 
         <div class="row">
           
-          <div class="col-lg-8" style="margin-left:200px;margin-top:45px;width:1000px;border-right: 1px solid #eee;">
+          <div class="col-lg-8" style="margin-left:11.3%;width:1000px;border-right: 1px solid #eee;">
             <div class="panel panel-primary">
               <div class="panel-heading">
                 <h3 class="panel-title"><i class="fa fa-tag"></i> Submit App</h3>
@@ -261,7 +352,7 @@ $(document).ready(function(){
             </div>
            
           </div>
-          <div class="col-lg-3"style="margin-top:45px;" >
+          <div class="col-lg-3" >
             
               <div class="panel panel-primary">
               <div class="panel-heading">
