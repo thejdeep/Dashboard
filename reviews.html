@@ -9,7 +9,9 @@
     <title>Dashboard</title>
 
     <!-- Bootstrap core CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
 
     <!-- Add custom CSS here -->
     <link href="css/sb-admin.css" rel="stylesheet">
@@ -22,7 +24,7 @@
     .typeahead,
 .tt-query,
 .tt-hint {
-  width: 600px;
+  width: 350px;
   height: 30px;
   /*padding: 8px 8px;*/
   font-size: 20px;
@@ -32,7 +34,7 @@
      -moz-border-radius: 8px;
           border-radius: 8px;
   outline: none;
-  margin-left:70px;
+  margin-left:1%;
   margin-top: 5px;
 }
 
@@ -54,10 +56,9 @@
   color: #999
 }
 
-
 .tt-dropdown-menu {
-  width: 600px;
-  margin-left: 70px; 
+  width: 350px;
+  margin-left: 1%; 
   margin-top: 12px;
   padding: 8px 0;
   background-color: #fff;
@@ -70,11 +71,6 @@
      -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
           box-shadow: 0 5px 10px rgba(0,0,0,.2);
 }
-.phones .tt-dropdown-menu {
- width: 200px;
-  
-}
-
 
 .tt-suggestion {
   padding: 3px 20px;
@@ -99,11 +95,6 @@
 
 }</style>
 
-<script>
-$(document).ready(function(){
-  $(":file").css("background-color","blue");
-});
-</script>
   </head>
 
   <body>
@@ -125,7 +116,7 @@ $(document).ready(function(){
 
            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav">
-      <li ><a href="index.html">Feed</a></li>
+      <li><a href="index.html">Feed</a></li>
       <li><a href="allapps.html">All Apps</a></li>
       <li><a href="myapps.html">My Apps</a></li>
       
@@ -144,14 +135,20 @@ $(document).ready(function(){
     </ul>
     <form class="navbar-form navbar-left" role="search">
       <div class="form-group">
-        <input type="text" class="apps" placeholder="Search">
+        <input type="text" class="apps" placeholder="Search" style="margin-left:1%;">
           
       </div>
-      <button type="button" class="btn btn-success">Search</button>
-       <a href="app.html"><button type="button" class="btn btn-primary">Submit App</button></a>
+      <button type="button" class="btn btn-success"style="margin-left:2px;"><i class="fa fa-search"></i></button>
+       
     </form>
+
+
     <ul class="nav navbar-nav navbar-right">
+      <li>   <button type="button" class="btn btn-primary" style="margin-top:8px;"><a href="app.html" style="color:white;">Submit App</a></button></li>
+
+
        <li class="dropdown messages-dropdown" >
+
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell-o"></i> Notifications <span class="badge">7</span> <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 
@@ -196,6 +193,7 @@ $(document).ready(function(){
                 <li><a href="#"><i class="fa fa-power-off" style="color:#BEBEBE;"></i> Log Out</a></li>
               </ul>
             </li>
+
     </ul>
   </div><!-- /.navbar-collapse --> 
 

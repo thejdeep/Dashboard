@@ -9,7 +9,9 @@
     <title>Dashboard</title>
 
     <!-- Bootstrap core CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
 
     <!-- Add custom CSS here -->
     <link href="css/sb-admin.css" rel="stylesheet">
@@ -17,13 +19,12 @@
     <!-- Page Specific CSS -->
     <link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css">
     <link rel="stylesheet" type="text/css" href="css/typeahead.js-bootstrap.css">
-    
     <style type="text/css">
 
     .typeahead,
 .tt-query,
 .tt-hint {
-  width: 600px;
+  width: 350px;
   height: 30px;
   /*padding: 8px 8px;*/
   font-size: 20px;
@@ -33,7 +34,7 @@
      -moz-border-radius: 8px;
           border-radius: 8px;
   outline: none;
-  margin-left:70px;
+  margin-left:1%;
   margin-top: 5px;
 }
 
@@ -56,8 +57,8 @@
 }
 
 .tt-dropdown-menu {
-  width: 600px;
-  margin-left: 70px; 
+  width: 350px;
+  margin-left: 1%; 
   margin-top: 12px;
   padding: 8px 0;
   background-color: #fff;
@@ -93,6 +94,7 @@
 
 
 }</style>
+
   </head>
 
   <body>
@@ -133,14 +135,20 @@
     </ul>
     <form class="navbar-form navbar-left" role="search">
       <div class="form-group">
-        <input type="text" class="apps" placeholder="Search">
+        <input type="text" class="apps" placeholder="Search" style="margin-left:1%;">
           
       </div>
-      <button type="button" class="btn btn-success">Search</button>
-      <a href="app.html"><button type="button" class="btn btn-primary">Submit App</button></a>
+      <button type="button" class="btn btn-success"style="margin-left:2px;"><i class="fa fa-search"></i></button>
+       
     </form>
+
+
     <ul class="nav navbar-nav navbar-right">
+      <li>   <button type="button" class="btn btn-primary" style="margin-top:8px;"><a href="app.html" style="color:white;">Submit App</a></button></li>
+
+
        <li class="dropdown messages-dropdown" >
+
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell-o"></i> Notifications <span class="badge">7</span> <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 
@@ -178,13 +186,14 @@
       <li class="dropdown user-dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Thejdeep <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="#"><i class="fa fa-user"style="color:#BEBEBE;"></i> Profile</a></li>
+                <li><a href="#"><i class="fa fa-user" style="color:#BEBEBE;"></i> Profile</a></li>
                 
-                <li><a href="#"><i class="fa fa-gear"style="color:#BEBEBE;"></i> Settings</a></li>
+                <li><a href="#"><i class="fa fa-gear" style="color:#BEBEBE;"></i> Settings</a></li>
                 <li class="divider"></li>
-                <li><a href="#"><i class="fa fa-power-off"style="color:#BEBEBE;"></i> Log Out</a></li>
+                <li><a href="#"><i class="fa fa-power-off" style="color:#BEBEBE;"></i> Log Out</a></li>
               </ul>
             </li>
+
     </ul>
   </div><!-- /.navbar-collapse --> 
 
@@ -193,8 +202,85 @@
 
 
          
+          <!-- <i class="fa fa-search" style="margin-left:100px;margin-top:15px;"></i> -->
+         <!--  <input type="text" class="apps" placeholder="Search" style="width:600px;margin-left:70px;margin-top:5px;">
+          <button type="button" class="btn btn-success" style="margin-top:10px;width:80px;">Search</button>
+          <a href="app.html">
+          <button type="button" class="btn btn-primary" style="margin-top:10px;width:80px;margin-left:310px;">Submit App</button></a>
+           <ul class="nav navbar-nav navbar-right navbar-user">
+            <li class="dropdown messages-dropdown" style="margin-left:10px;">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell-o"></i> Notifications <span class="badge">7</span> <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                
+                <li class="message-preview">
+                  <a href="#">
+                    <span class="avatar"><img src="chidambar.jpg" width="50px" height="50px" class="img-circle"></span>
+                    <span class="name">Chidambar</span>
+                    <span class="message">Hey there !</span>
+                    <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li class="message-preview">
+                  <a href="#">
+                    <span class="avatar"><img src="vineet.jpeg" width="50px" height="50px" class="img-circle"></span>
+                    <span class="name">Vineet</span>
+                    <span class="message">Hey there !</span>
+                    <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li class="message-preview">
+                  <a href="#">
+                    <span class="avatar"><img src="thej.jpeg" width="50px" height="50px" class="img-circle"></span>
+                    <span class="name">Thej</span>
+                    <span class="message">Hey there !</span>
+                    <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li><a href="#">View All  <span class="badge">7</span></a></li>
+              </ul>
+            </li>
+            
+            <li class="dropdown user-dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Thejdeep <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
+                
+                <li><a href="#"><i class="fa fa-gear"></i> Settings</a></li>
+                <li class="divider"></li>
+                <li><a href="#"><i class="fa fa-power-off"></i> Log Out</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html"><i class="fa fa-users"></i> Feed</a></li>
+            <li ><a href="allapps.html"><i class="fa fa-tags"></i> All Apps</a></li>
+            <li><a href="myapps.html"><i class="fa fa-tag"></i> My Apps</a></li>
+            <li><a href="app.html"><i class="fa fa-tag" ></i> Submit App</a></li>
+            <li style="margin-left:1000px;"><a href="#"><i class="fa fa-download"></i> Download Applover</a></li>
+            
+          </ul>
+
+        </div></div>
+
+ -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+
          
+        <!-- /.navbar-collapse -->
       </nav>
+     <!--  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="margin-top:3%;">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html"><i class="fa fa-users"></i> Feed</a></li>
+            <li ><a href="allapps.html"><i class="fa fa-tags"></i> All Apps</a></li>
+            <li><a href="myapps.html"><i class="fa fa-tag"></i> My Apps</a></li>
+            <li><a href="app.html"><i class="fa fa-tag" ></i> Submit App</a></li>
+            <li style="margin-left:1000px;"><a href="#"><i class="fa fa-download"></i> Download Applover</a></li>
+            
+          </ul>
+        </nav> -->
      
       <div id="page-wrapper">
 
@@ -203,7 +289,7 @@
 
         <div class="row">
           
-          <div class="col-lg-9" style="margin-left:11.3%;width:1200px;border-right: 1px solid #eee;">
+          <div class="col-lg-9" style="margin-left:2%;width:1200px;border-right: 1px solid #eee;">
             <div class="panel panel-primary">
               <div class="panel-heading">
                 <h3 class="panel-title"><i class="fa fa-tags"></i> All Apps</h3>
