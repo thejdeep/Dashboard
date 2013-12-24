@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+ <script type="text/javascript" src="jquery.simplePagination.js"></script>
+ <link rel="stylesheet" type="text/css" href="simplePagination.css">
+<link href="style.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+    .selection {
+        display: none;
+    }
+</style>
+
+
+<script>
+
+function test(pageNumber)
+{
+
+  var page="#page-"+pageNumber;
+  $('.selection').hide()
+  $(page).show()
+
+}
+
+</script>
+
+
+</head>
+<body>
+
+<!-- <p class="selection" id="page-1">one</p>
+<p class="selection" id="page-1">Two</p>
+<p class="selection" id="page-3">Three</p>
+<p class="selection" id="page-4">Four</p>
+<p class="selection" id="page-5">Five</p>
+<p class="selection" id="page-6">Six</p>
+<p class="selection" id="page-7">Seven</p>
+<p class="selection" id="page-8">Eight</p>
+ -->
+
+<div id="selector">
+</div>
+
+
+    <script language="javascript">
+    $(function() {
+        $('#selector').pagination({
+            items: 10,
+            itemsOnPage: 3,
+            cssStyle: 'light-theme',
+            onPageClick: function(pageNumber){test(pageNumber)}
+        });
+    });
+    </script>
+
+</body>
+</html>

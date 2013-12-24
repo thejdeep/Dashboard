@@ -19,6 +19,7 @@
     <!-- Page Specific CSS -->
     <link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css">
     <link rel="stylesheet" type="text/css" href="css/typeahead.js-bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="simplePagination.css"/>
     <style type="text/css">
 
     .typeahead,
@@ -94,6 +95,31 @@
 
 
 }</style>
+<script src="js/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="jquery.simplePagination.js"></script>
+ <link rel="stylesheet" type="text/css" href="simplePagination.css">
+<link href="style.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+    .selection {
+        display: none;
+    }
+</style>
+
+
+<script>
+
+function test(pageNumber)
+{
+
+  var page="#page-"+pageNumber;
+  $('.selection').hide()
+  $(page).show()
+
+}
+
+</script>
+
 
   </head>
 
@@ -369,8 +395,24 @@
                   </a>
                   
                 </div>
-                <div class="text-right">
-                  <a href="#" style="color:#9C9999;">View All Activity <i class="fa fa-arrow-circle-right"style="color:#BEBEBE;"></i></a>
+                <div class="text-right" style="margin-left:45%;margin-top:50px;">
+                  <!-- <a href="#" style="color:#9C9999;">View All Activity <i class="fa fa-arrow-circle-right"style="color:#BEBEBE;"></i></a> -->
+                  <div id="selector">
+</div>
+
+
+    <script language="javascript">
+    $(function() {
+        $('#selector').pagination({
+            items: 10,
+            itemsOnPage: 3,
+            cssStyle: 'light-theme',
+            onPageClick: function(pageNumber){test(pageNumber)}
+        });
+    });
+    </script>
+
+
                 </div>
               </div>
             </div>
@@ -420,7 +462,7 @@
     </div><!-- /#wrapper -->
 
     <!-- JavaScript -->
-    <script src="js/jquery-1.10.2.js"></script>
+    
     <script src="js/bootstrap.js"></script>
 
     <!-- Page Specific Plugins -->
@@ -430,6 +472,7 @@
     <script src="js/tablesorter/jquery.tablesorter.js"></script>
     <script src="js/tablesorter/tables.js"></script>
      <script src="typeahead.min.js"></script>
+   
 
     <script type="text/javascript">
 $('input.apps').typeahead([
@@ -444,7 +487,6 @@ $('input.apps').typeahead([
   local: ["Vineet","Chidambar","Thejdeep","Sriram","Suhas"]
 }]
 );
-    </script>
-
+  
   </body>
 </html>
