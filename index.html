@@ -19,105 +19,14 @@
     <!-- Page Specific CSS -->
     <link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css">
     <link rel="stylesheet" type="text/css" href="css/typeahead.js-bootstrap.css">
-    <style type="text/css">
-
-    .typeahead,
-.tt-query,
-.tt-hint {
-  width: 350px;
-  height: 30px;
-  /*padding: 8px 8px;*/
-  font-size: 20px;
-  line-height: 30px;
-  border: 2px solid #ccc;
-  -webkit-border-radius: 8px;
-     -moz-border-radius: 8px;
-          border-radius: 8px;
-  outline: none;
-  margin-left:1%;
-  margin-top: 5px;
-}
-
-.typeahead {
-  background-color: #fff;
-}
-
-.typeahead:focus {
-  border: 2px solid #0052a4;
-}
-
-.tt-query {
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-}
-
-.tt-hint {
-  color: #999
-}
-
-.tt-dropdown-menu {
-  width: 350px;
-  margin-left: 1%; 
-  margin-top: 12px;
-  padding: 8px 0;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  -webkit-border-radius: 8px;
-     -moz-border-radius: 8px;
-          border-radius: 8px;
-  -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
-     -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
-          box-shadow: 0 5px 10px rgba(0,0,0,.2);
-}
-
-.tt-suggestion {
-  padding: 3px 20px;
-  font-size: 18px;
-  line-height: 24px;
-}
-
-.tt-suggestion.tt-is-under-cursor {
-  color: #fff;
-  background-color: #0052a4;
-
-}
-
-.tt-suggestion p {
-  
-}
-
-.gist {
-  font-size: 14px;
-}
-
-
-}</style>
-<script src="js/jquery-1.10.2.js"></script>
-  <script type="text/javascript" src="jquery.simplePagination.js"></script>
- <link rel="stylesheet" type="text/css" href="simplePagination.css">
+    <link rel="stylesheet" type="text/css" href="css/type.css">
+    <script src="js/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="js/jquery.simplePagination.js"></script>
+ <link rel="stylesheet" type="text/css" href="css/simplePagination.css">
 <link href="style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/new.css">
 
-<style type="text/css">
-    .selection {
-        display: none;
-    }
-</style>
-
-
-<script>
-
-function test(pageNumber)
-{
-
-  var page="#page-"+pageNumber;
-  $('.selection').hide()
-  $(page).show()
-
-}
-
-</script>
+<script type="text/javascript" src="js/pagin.js"></script>
 
   </head>
 
@@ -164,18 +73,7 @@ function test(pageNumber)
               </ul>
             </li>
       
-     <!--  <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li class="divider"></li>
-          <li><a href="#">Separated link</a></li>
-          <li class="divider"></li>
-          <li><a href="#">One more separated link</a></li>
-        </ul>
-      </li> -->
+   
     </ul>
     <form class="navbar-form navbar-left" role="search">
       <div class="form-group">
@@ -185,7 +83,7 @@ function test(pageNumber)
      
        
     </form>
-<button type="button" class="btn btn-success"style="margin-left:-9px;margin-top:10px;"><a href=""><i class="fa fa-search"></i></a></button>
+<button type="button" class="btn btn-success"style="margin-top:10px;"><a href="#"><i class="fa fa-search"></i></a></button>
 
     <ul class="nav navbar-nav navbar-right">
       <li>   <button type="button" class="btn btn-success" style="margin-top:10px;margin-right:10px;"><a href="#" style="color:white;"><i class="fa fa-download"></i>  AppLover</a></button></li>
@@ -199,7 +97,7 @@ function test(pageNumber)
                 
                 <li class="message-preview">
                   <a href="#">
-                    <span class="avatar"><img src="chidambar.jpg" width="50px" height="50px" class="img-circle"></span>
+                    <span class="avatar"><img src="images/chidambar.jpg" width="50px" height="50px" class="img-circle"></span>
                     <span class="name">Chidambar</span>
                     <span class="message">Hey there !</span>
                     <span class="time"><i class="fa fa-clock-o"style="color:#BEBEBE;"></i> 4:34 PM</span>
@@ -208,7 +106,7 @@ function test(pageNumber)
                 <li class="divider"></li>
                 <li class="message-preview">
                   <a href="#">
-                    <span class="avatar"><img src="vineet.jpeg" width="50px" height="50px" class="img-circle"></span>
+                    <span class="avatar"><img src="images/vineet.jpeg" width="50px" height="50px" class="img-circle"></span>
                     <span class="name">Vineet</span>
                     <span class="message">Hey there !</span>
                     <span class="time"><i class="fa fa-clock-o"style="color:#BEBEBE;"></i> 4:34 PM</span>
@@ -217,7 +115,7 @@ function test(pageNumber)
                 <li class="divider"></li>
                 <li class="message-preview">
                   <a href="#">
-                    <span class="avatar"><img src="thej.jpeg" width="50px" height="50px" class="img-circle"></span>
+                    <span class="avatar"><img src="images/thej.jpeg" width="50px" height="50px" class="img-circle"></span>
                     <span class="name">Thej</span>
                     <span class="message">Hey there !</span>
                     <span class="time"><i class="fa fa-clock-o"style="color:#BEBEBE;"></i> 4:34 PM</span>
@@ -252,16 +150,7 @@ function test(pageNumber)
          
         <!-- /.navbar-collapse -->
       </nav>
-     <!--  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="margin-top:3%;">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html"><i class="fa fa-users"></i> Feed</a></li>
-            <li ><a href="allapps.html"><i class="fa fa-tags"></i> All Apps</a></li>
-            <li><a href="myapps.html"><i class="fa fa-tag"></i> My Apps</a></li>
-            <li><a href="app.html"><i class="fa fa-tag" ></i> Submit App</a></li>
-            <li style="margin-left:1000px;"><a href="#"><i class="fa fa-download"></i> Download Applover</a></li>
-            
-          </ul>
-        </nav> -->
+    
 
       <div id="page-wrapper">
 
@@ -333,16 +222,7 @@ function test(pageNumber)
 </div>
 
 
-    <script language="javascript">
-    $(function() {
-        $('#selector').pagination({
-            items: 10,
-            itemsOnPage: 3,
-            cssStyle: 'light-theme',
-            onPageClick: function(pageNumber){test(pageNumber)}
-        });
-    });
-    </script>
+    <script type="text/javascript" src="js/pagination.js"></script>
 
 
                 </div>
@@ -350,7 +230,7 @@ function test(pageNumber)
             </div>
           </div>
           
-          <div class="col-lg-2" style="width:20%;">
+          <div class="col-lg-3" style="width:20%;">
             <div class="panel panel-primary">
               <div class="panel-heading">
                 <h3 class="panel-title"><i class="fa fa-tags" style="color:black;"></i> Featured Apps</h3>
@@ -405,20 +285,7 @@ function test(pageNumber)
     <script src="js/tablesorter/tables.js"></script>
      <script src="typeahead.min.js"></script>
 
-    <script type="text/javascript">
-$('input.apps').typeahead([
-{
-      name: 'Apps',
-      header:'<h4 style="color:#428BCA;">Apps</h4>',
-      local: ["Text", "Pano", "Friday", "Train", "Mp3"]
-},
-{
-  name : 'AppLovers',
-  header:'<h4 style="color:#428BCA;">AppLovers</h4>',
-  local: ["Vineet","Chidambar","Thejdeep","Sriram","Suhas"]
-}]
-);
-    </script>
+    <script type="text/javascript" src="js/inputtype.js"></script>
 
   </body>
 </html>
