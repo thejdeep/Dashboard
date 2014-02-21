@@ -116,10 +116,36 @@ input {
 	background-color: #28ad63;
 }
 	</style>
+<script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '1462199527332085',
+          status     : true,
+          xfbml      : true
+        });
+      };
 
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "http://connect.facebook.net/en_US/all.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "http://connect.facebook.net/en_US/all.js#xfbml=1&appId=1462199527332085";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 </head>
 
 <body>
+	  <div id="fb-root"></div>
+    
 
 	<div id="login" style="margin-top:13%;">
 
@@ -135,7 +161,7 @@ input {
 				<p><label for="password">Password</label></p>
 				<p><input type="password" id="password" value="password"></p> <!-- JS because of IE support; better: placeholder="password" -->
 
-				<p><button type="submit"><a href="index.html">Sign In</a></button></p>
+				<p><button type="submit"><a href="index.html">Sign In</a></button><div class="fb-login-button" style="margin-left:40%;"data-max-rows="2" data-size="large" data-show-faces="false" data-auto-logout-link="false"></div></p>
 
 
 			</fieldset>
